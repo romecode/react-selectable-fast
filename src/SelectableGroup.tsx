@@ -231,10 +231,6 @@ class SelectableGroup extends Component<TSelectableGroupProps> {
     this.selectedItems.delete(selectableItem)
     this.selectingItems.delete(selectableItem)
 
-    if (isHandled) {
-      // Notify third-party dev that component did unmount and handled item probably should be deleted
-      this.props.onSelectionFinish!([...this.selectedItems])
-    }
   }
 
   toggleSelectionMode() {
