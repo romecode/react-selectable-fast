@@ -225,9 +225,6 @@ class SelectableGroup extends Component<TSelectableGroupProps> {
   unregisterSelectable = (selectableItem: TSelectableItem) => {
     this.registry.delete(selectableItem)
 
-    const isHandled =
-      this.selectedItems.has(selectableItem) || this.selectingItems.has(selectableItem)
-
     this.selectedItems.delete(selectableItem)
     this.selectingItems.delete(selectableItem)
 
