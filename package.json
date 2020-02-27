@@ -9,7 +9,7 @@
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf ./lib ./dist",
-    "prepare": "npm run build:prod",
+    "prepare": "npm run build:prod && npm run transpile",
     "watch": "webpack --watch",
     "build": "webpack",
     "transpile": "tsc",
